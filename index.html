@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Upload with Date, Time, and Location</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Take a Picture</h1>
+
+        <video id="video" width="320" height="240" autoplay></video>
+        <button id="capture">Capture</button>
+        
+        <canvas id="canvas" width="320" height="240"></canvas>
+
+        <div id="photoDetails">
+            <p id="dateTime"></p>
+            <p id="location"></p>
+        </div>
+
+        <div id="uploadedImages">
+            <h2>Uploaded Images</h2>
+            <ul id="imageList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
